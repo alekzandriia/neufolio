@@ -26,7 +26,7 @@
     background: transparent;
     padding:.5rem;
     border: none;
-    font-size:4vmin;
+    font-size:3vmin;
     color: var(--font-color);
     cursor: pointer;
 }  
@@ -50,8 +50,9 @@ p {
 /* header & nav */
 header {
     display:flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     align-items: center;
-    padding:1rem;
     position:sticky;
     background: var(--animated-bg-color);
     top:0;
@@ -66,12 +67,11 @@ header {
 }
 nav {
     margin-left: auto;
-    margin-right: 1rem;
 
 }
 nav ul {
     display:flex;
-    gap:1rem;
+    gap:.75rem;
     list-style: none;
 }
 nav li {
