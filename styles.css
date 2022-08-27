@@ -26,7 +26,7 @@
     background: transparent;
     padding:.5rem;
     border: none;
-    font-size:2rem;
+    font-size:3vmin;
 }  
 
 body {
@@ -34,6 +34,7 @@ body {
     font-size:2.5vmin;
     background: #B9E4F7;
     width:100vw;
+    overflow-x: hidden;
 }
 p::selection,
 h1::selection,
@@ -56,8 +57,10 @@ header {
     width:100vw;
     z-index: 1000;
 }
-img {
+#header-logo {
     margin-right: 1rem;
+    width:18vmin;
+    height:auto;
 }
 nav {
     margin-left: auto;
@@ -140,6 +143,7 @@ div.container {
     align-items: center;
     justify-items: center;
     gap:2rem;
+    border: 1px solid black;
   }
   div.blue {
     background-color:var(--primary-color);
@@ -230,6 +234,7 @@ blockquote {
 
 /* footer */
 footer {
+    border: 1px solid black;
     padding:2rem;
     display: flex;
     align-items: center;
