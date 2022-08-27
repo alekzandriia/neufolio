@@ -23,16 +23,15 @@
     color:white;
   }
 .theme-toggle {
-    background: var(--main-bg-color);
+    background: transparent;
     padding:.5rem;
-    border: .1rem solid black;
-    border-radius: 0.5rem 0 0.5rem 0;
-    box-shadow: .2rem .2rem;
+    border: none;
+    font-size:2rem;
 }  
 
 body {
     font-family: system-ui;
-    font-size:16px;
+    font-size:2.5vmin;
     background: #B9E4F7;
     width:100vw;
 }
@@ -54,10 +53,11 @@ header {
     background: var(--animated-bg-color);
     top:0;
     border: 1px solid black;
+    width:100vw;
     z-index: 1000;
 }
 img {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 nav {
     margin-left: auto;
@@ -130,7 +130,8 @@ div.container {
     position:relative;
   }
   div.yellow {
-    height: 100vh;
+    min-height:100vh;
+    max-height: fit-content;
     position:sticky;
     top:0px;
     display:grid;
@@ -142,7 +143,8 @@ div.container {
   }
   div.blue {
     background-color:var(--primary-color);
-    height: 100vh;
+    min-height:100vh;
+    max-height: fit-content;
     position:sticky;
     top:0px;
     overflow:hidden;
@@ -155,7 +157,8 @@ div.container {
   }
   div.red {
     background:var(--secondary-color);
-    height:100vh;
+    min-height:100vh;
+    max-height: fit-content;
     position:sticky;
     top:0px;
     overflow:hidden;
