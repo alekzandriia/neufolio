@@ -22,6 +22,13 @@
     --link-color: black;
     color:white;
   }
+.theme-toggle {
+    background: var(--main-bg-color);
+    padding:.5rem;
+    border: .1rem solid black;
+    border-radius: 0.5rem 0 0.5rem 0;
+    box-shadow: .2rem .2rem;
+}  
 
 body {
     font-family: system-ui;
@@ -45,7 +52,6 @@ header {
     padding:1rem;
     position:sticky;
     background: var(--animated-bg-color);
-    position: sticky;
     top:0;
     border: 1px solid black;
     z-index: 1000;
@@ -124,13 +130,15 @@ div.container {
     position:relative;
   }
   div.yellow {
-    height: 80vh;
+    height: 100vh;
     position:sticky;
     top:0px;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    justify-content: space-around;
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
+    padding:3rem;
+    align-items: center;
+    justify-items: center;
+    gap:2rem;
   }
   div.blue {
     background-color:var(--primary-color);
@@ -152,7 +160,7 @@ div.container {
     top:0px;
     overflow:hidden;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(50ch, 1fr) );
     padding: 1rem;
     border: 1px solid black;
   }
@@ -165,6 +173,7 @@ div.container {
     height:20rem;
     filter: grayscale(0%);
     transition: filter 1s ease;
+    aspect-ratio: 1/1;
 }
 #profile-pic:hover {
     filter: grayscale(100%);
@@ -201,6 +210,7 @@ blockquote {
     border-radius: 0.5rem 0 0.5rem 0;
     box-shadow: .5rem .5rem;
     overflow-wrap: break-word;
+    max-width:600px;
 }
 .card::first-line {
     background: var(--primary-color);
