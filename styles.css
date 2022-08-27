@@ -11,22 +11,24 @@
     --primary-color: #dadafe;
     --secondary-color: #FFA9A1;
     --link-color: black;
-    color:black;
+    --font-color:black;
 }
 
 :root.dark {
     --main-bg-color: #fef7e5;
-    --primary-color: #5D5DA9;
-    --secondary-color: #FFA9A1;
-    --animated-bg-color: black;
+    --primary-color: #dadafe;
+    --secondary-color: #ef6461;
+    --animated-bg-color: #04724d;
     --link-color: black;
-    color:white;
+    --font-color:#fef7e5;
   }
 .theme-toggle {
     background: transparent;
     padding:.5rem;
     border: none;
-    font-size:3vmin;
+    font-size:4vmin;
+    color: var(--font-color);
+    cursor: pointer;
 }  
 
 body {
@@ -187,14 +189,17 @@ div.container {
 }
 .intro h1 {
     font-size: 12vmin;
+    color: var(--font-color)
 }
 .intro h2 {
     font-size: 8vmin;
+    color: var(--font-color);
     line-height: 1.5;
     font-style: oblique;
     font-weight: lighter;
 }
 u {
+    color:var(--font-color)
     text-decoration-color: black;
     text-decoration-thickness: 0.2rem;
     text-decoration-style: wavy;
