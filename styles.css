@@ -27,6 +27,7 @@ body {
     font-family: system-ui;
     font-size:16px;
     background: #B9E4F7;
+    width:100vw;
 }
 p::selection,
 h1::selection,
