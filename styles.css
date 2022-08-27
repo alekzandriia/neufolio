@@ -243,6 +243,13 @@ footer {
     gap:1rem;
 }
 
+#footer-logo {
+    width:10vmin;
+    height:auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 /*footer marquee */
 #skills {
     font-size:3rem;
