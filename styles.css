@@ -141,10 +141,10 @@ div.container {
     position:sticky;
     top:0px;
     display:grid;
-    grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(10vmin, 1fr));
     padding:4rem;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 
     border: 1px solid black;
   }
@@ -171,7 +171,6 @@ div.container {
     overflow:hidden;
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(50ch, 1fr) );
-    padding: 1rem;
     border: 1px solid black;
   }
 
@@ -220,14 +219,14 @@ q {
 /* cards */
 .card {
     padding: 3rem;
-    margin: 2rem;
     background: var(--main-bg-color);
     border: .1rem solid black;
     border-radius: 0.5rem 0 0.5rem 0;
     overflow-wrap: break-word;
-    max-width:600px;
+    min-width: 30ch;
+    max-width: 60ch;
     line-height: 2.5rem;
-    margin:2rem;
+    margin:1vmin;
 }
 .card::first-line {
     
