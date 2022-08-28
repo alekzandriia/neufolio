@@ -141,7 +141,7 @@ div.container {
     top:0px;
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
-    padding:2rem;
+    padding:4rem;
     align-items: center;
     justify-items: center;
 
@@ -223,6 +223,7 @@ blockquote {
     overflow-wrap: break-word;
     max-width:600px;
     line-height: 2;
+    margin:4rem;
 }
 .card::first-line {
     background: var(--primary-color);
@@ -238,11 +239,12 @@ blockquote {
 }
 .card .links {
     display:flex;
+    margin:1rem;
 }
 .card li {
     list-style: none;
 }
-.card a {
+.card .links a {
     background: var(--animated-bg-color);
     padding:.5rem;
     border: .1rem solid black;
