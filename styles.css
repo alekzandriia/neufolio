@@ -282,7 +282,7 @@ q {
 /* footer */
 footer {
     border: 1px solid;
-    border-color: var(--font-color);
+    border-color: black;
     color: var(--font-color);
     padding:2rem;
     display: flex;
