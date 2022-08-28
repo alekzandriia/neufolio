@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* global */
 :root {
@@ -167,7 +168,7 @@ div.container {
     padding:2rem;
    
   }
-  div.red {
+  #projects {
     background:var(--secondary-color);
     min-height:100vh;
     max-height: fit-content;
@@ -177,6 +178,8 @@ div.container {
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(50ch, 1fr) );
     border: 1px solid black;
+    margin-top: 100px;
+    padding-top: 100px;
   }
 
   /* hero section */
