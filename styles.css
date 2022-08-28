@@ -141,10 +141,10 @@ div.container {
     position:sticky;
     top:0px;
     display:grid;
-    grid-template-columns: repeat( auto-fit, minmax(10vmin, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
     padding:4rem;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 
     border: 1px solid black;
   }
@@ -179,7 +179,7 @@ div.container {
     border: 0.4rem dotted black;
     border-radius: 50%;
     background:var(--main-bg-color);
-    height:20rem;
+    width:20rem;
     filter: grayscale(0%);
     transition: filter 1s ease;
     aspect-ratio: 1/1;
