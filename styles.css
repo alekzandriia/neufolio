@@ -223,7 +223,7 @@ blockquote {
     overflow-wrap: break-word;
     max-width:600px;
     line-height: 2;
-    margin:4rem;
+    margin:2rem;
 }
 .card::first-line {
     background: var(--primary-color);
