@@ -68,6 +68,7 @@ header {
 }
 #logo-text {
     width:40vmin;
+    fill: var(--font-color);
 }
 nav {
     margin-left: auto;
