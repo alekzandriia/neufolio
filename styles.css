@@ -12,6 +12,7 @@
     --secondary-color: #FFA9A1;
     --link-color: black;
     --font-color:black;
+    --body-color:#B9E4F7;
 }
 
 :root.dark {
@@ -21,6 +22,7 @@
     --animated-bg-color: black;
     --link-color: white;
     --font-color:#dadafe;
+    --body-color: black;
   }
 .theme-toggle {
     background: transparent;
@@ -34,7 +36,7 @@
 body {
     font-family: system-ui;
     font-size:2.5vmin;
-    background: #B9E4F7;
+    background: var(--body-color);
     width:100vw;
     overflow-x: hidden;
 }
