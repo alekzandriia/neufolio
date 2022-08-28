@@ -141,10 +141,10 @@ div.container {
     top:0px;
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
-    padding:3rem;
+    padding:2rem;
     align-items: center;
     justify-items: center;
-    gap:2rem;
+
     border: 1px solid black;
   }
   div.blue {
@@ -220,9 +220,9 @@ blockquote {
     background: var(--main-bg-color);
     border: .1rem solid black;
     border-radius: 0.5rem 0 0.5rem 0;
-    box-shadow: .5rem .5rem;
     overflow-wrap: break-word;
     max-width:600px;
+    line-height: 2;
 }
 .card::first-line {
     background: var(--primary-color);
@@ -235,6 +235,39 @@ blockquote {
     color: var(--secondary-color);
     font-size: 1rem;
     font-style: italic;
+}
+.card .links {
+    display:flex;
+}
+.card li {
+    list-style: none;
+}
+.card a {
+    background: var(--animated-bg-color);
+    padding:.5rem;
+    border: .1rem solid black;
+    border-radius: 0.5rem 0 0.5rem 0;
+    box-shadow: .2rem .2rem;
+    text-decoration: none;
+    color: var(--link-color);
+    margin:0.5rem;
+}
+.card li:hover {
+    transform: scale(1.1);
+}
+.card img {
+    width:100%;
+    height:auto;
+    border-style: dashed;
+    border-color: var(--font-color);
+    transition: transform 1s;
+    padding:1rem;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+.card img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* footer */
