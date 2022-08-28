@@ -213,6 +213,9 @@ blockquote {
     line-height: 0.95;
     font-style: oblique;
   }
+q {
+    font-size: 2vmin;
+}
 
 /* cards */
 .card {
@@ -223,20 +226,22 @@ blockquote {
     border-radius: 0.5rem 0 0.5rem 0;
     overflow-wrap: break-word;
     max-width:600px;
-    line-height: 2;
+    line-height: 2.5rem;
     margin:2rem;
 }
 .card::first-line {
-    background: var(--primary-color);
+    
 }
 .card h1 {
-    font-size: 3rem;
+    font-size: 8vmin;
     font-weight:300;
+    
 }
 .card h2 {
     color: var(--secondary-color);
     font-size: 1rem;
     font-style: italic;
+    text-decoration:overline;
 }
 .card .links {
     display:flex;
