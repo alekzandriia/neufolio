@@ -52,8 +52,7 @@ p {
 /* header & nav */
 header {
     display:flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding:1rem;
     align-items: center;
     position:sticky;
     background: var(--animated-bg-color);
@@ -66,6 +65,9 @@ header {
     margin-right: 1rem;
     width:18vmin;
     height:auto;
+}
+#logo-text {
+    width:40vmin;
 }
 nav {
     margin-left: auto;
@@ -215,7 +217,8 @@ blockquote {
     font-style: oblique;
   }
 q {
-    font-size: 3vmin;
+    font-size: 2.5vmin;
+    font-style: italic;
 }
 
 /* cards */
@@ -228,7 +231,7 @@ q {
     min-width: 30ch;
     max-width: 60ch;
     line-height: 2.5rem;
-    margin:1vmin;
+    margin:3vmin;
 }
 .card::first-line {
     
