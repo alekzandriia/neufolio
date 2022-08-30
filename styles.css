@@ -61,6 +61,7 @@ header {
     border: 1px solid black;
     width:100vw;
     z-index: 1000;
+    overflow-x: hidden;
 }
 #header-logo {
     margin-right: 1rem;
@@ -140,6 +141,7 @@ nav li:hover {
 /*parallax sections */
 div.container {
     position:relative;
+    overflow-x: hidden;
   }
   div.yellow {
     min-height:100vh;
@@ -151,8 +153,8 @@ div.container {
     padding:4rem;
     align-items: center;
     justify-items: center;
-
     border: 1px solid black;
+    overflow-x: hidden;
   }
   div.blue {
     background-color:var(--primary-color);
@@ -166,6 +168,7 @@ div.container {
     justify-content: center;
     border: 1px solid black;
     padding:2rem;
+    overflow-x: hidden;
    
   }
   #projects {
@@ -178,8 +181,8 @@ div.container {
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(50ch, 1fr) );
     border: 1px solid black;
-    margin-top: 100px;
     padding-top: 100px;
+    overflow-x: hidden;
   }
 
   /* hero section */
@@ -232,13 +235,13 @@ q {
     border: .1rem solid black;
     border-radius: 0.5rem 0 0.5rem 0;
     overflow-wrap: break-word;
-    min-width: 30ch;
-    max-width: 60ch;
+    min-width: 20rem;
+    max-width: 420rem;
     line-height: 2.5rem;
     margin:3vmin;
 }
 .card::first-line {
-    
+    background: var(--primary-color);
 }
 .card h1 {
     font-size: 8vmin;
@@ -250,6 +253,7 @@ q {
     font-size: 1rem;
     font-style: italic;
     text-decoration:overline;
+    margin-top: 1ch;
 }
 .card .links {
     display:flex;
@@ -276,13 +280,13 @@ q {
     height:auto;
     border-style: dashed;
     border-color: var(--font-color);
-    transition: transform 1s;
+    transition: all 1s ease;
     padding:1rem;
     margin-top: 2rem;
     margin-bottom:2rem;
 }
 .card img:hover {
-    transform: scale(1.1);
+    padding:2rem;
     cursor: pointer;
 }
 
@@ -437,7 +441,21 @@ footer {
     box-shadow: 92vmin 0 12.038185662965873vmin currentColor;
 }
 
+#ampersand {
+    letter-spacing: -.5ch;
+    font-size: larger;
+    font-weight: bold;
+    padding: .5ch;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--body-color);
+}
 
+.projects {
+    font-size: 4rem;
+    font-weight:lighter;
+    padding: .5ch;
+    text-align: center;
+}
 
          
  
