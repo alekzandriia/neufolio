@@ -31,7 +31,7 @@ I decided to deviate from the standard flat style typical of neubrutalist design
 
 The whole site was written by hand in VSCode using only HTML, CSS & JavaScript.
 
-## Takeaways 
+## Challenges 
 
 This project took about 4 hours to make, mostly because I spent a lot of tie playing with colours and fiddling with little deciding whether to use pixels or rems in certain places. 🤪
 
