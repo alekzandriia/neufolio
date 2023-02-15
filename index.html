@@ -116,9 +116,11 @@
             </g>
             </svg></a>
         
-        &copy; 2022 Alekzandriia. All Rights Reserved.
+        <p>&copy; <span id="year"></span> Alekzandriia. All Rights Reserved.</p>
     </footer>
-
+      <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
     <script src="script.js"></script>
 </body>
 
